@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Link dan Navigasi</title>
+  </head>
+  <body>
+    <h1>Contact Me</h1>
+    <nav>
+      <a href="home.html">Home</a> | <a href="about.html">About</a> |
+      <a href="project.html">Project</a> | <a href="contact.html">Contact</a> | <a href="experience.html">Experience</a>
+    </nav>
+    <hr/>
+    <h2>Informasi Kontak</h2>
+    <p>Jika anda ingin berdiskusi/berbincang dengan saya, silahkan mengisi form berikut.<br/>Anda juga bisa mengirim ke email <a href="mailto:swimmingfizh@student.upi.edu">swimmingfizh@student.upi.edu</a>.</p><br/>
+    <h2>Form Pesan</h2>
+    <form action="#" method="post">
+      <table border="1" cellspacing="0" cellpadding="5">
+        <tr>
+          <td colspan="2" align="center"><strong>Form Data Kontak</strong></td>
+        </tr>
+        <tr>
+          <td><label for="Nama Lengkap"><strong>Nama Lengkap :</strong></label></td>
+          <td><input type="text" id="Nama Lengkap" name="Nama Lengkap" required /></td>
+        </tr>
+        <tr>
+            <td><label for="Email"><strong>Email :</strong></label></td>
+            <td><input type="email" id="Email" name="Email" required/></td>
+        </tr>
+        <tr>
+            <td><label for="Nomor Telepon"><strong>Nomor telepon :</strong></label></td>
+            <td><input type="number" id="Nomor Telepon name=Nomor Telepon" required/></td>
+        </tr>
+        <tr>
+            <td><label for="Jenis Kelamin"><strong>Jenis Kelamin :</strong></label></td>
+            <td><input type="radio" id="Jenis Kelamin" name="Jenis Kelamin" value="Laki-laki" required/>Laki-laki <input type="radio" id="Jenis Kelamin" name="Jenis Kelamin" value="Perempuan" required/>Perempuan</td>
+        </tr>
+        <tr>
+            <td><label for="Tanggal Lahir"><strong>Tanggal Lahir :</strong></label></td>
+            <td><input type="date" id="Tanggal Lahir" name="Tanggal Lahir" required/></td>
+        </tr>
+        <tr>
+            <td><label for="Topik Pesan"><strong>Topik Pesan :</strong></label></td>
+            <td><select id="Topik Pesan" name="Topik Pesan">
+                <option value="Berbincang">Berbincang</option>
+                <option value="Nongkrong">Nongkrong</option>
+                <option value="Berbisnis">Berbisnis</option></select></td>
+        </tr>
+        <tr>
+            <td><label for="Jenis Pesan"><strong>Jenis Pesan :</strong></label></td>
+            <td><input type="radio" id="Jenis Pesan" name="Jenis Pesan" value="Pertanyaan" required/>Pertanyaan <input type="radio" id="Jenis Pesan" name="Jenis Pesan" value="Saran" required/>Saran <input type="radio" id="Jenis Pesan" name="Jenis Pesan" value="Ajakan" required/>Ajakan <input type="radio" id="Jenis Pesan" name="Jenis Pesan" value="Lainnnya" required/>Lainnya</td>
+        </tr>
+        <!-- punten bapak, disini saya mencari lagi di google bagaimana agar tulisan pesannya bisa ada diatas menggunakan vertical-align -->
+        <tr>
+            <td style="vertical-align: top;"><label for="Pesan"><strong>Pesan :</strong></label></td>
+            <td><textarea id="Pesan" name="Pesan" rows="6" cols="50"></textarea></td>
+        </tr>
+        <tr>
+            <td><label for="Salinan Pesan"><strong>Salinan Pesan :</strong></label></td>
+            <td><input type="checkbox" id="Salinan Pesan" name="Salinan Pesan" value="Kirim salinan pesan ke email saya"/>Kirim salinan pesan ke email saya</td>
+        </tr>
+        <!-- disini saya kembali mengeksplor di google pak cara agar teks nya berada di tengah menggunakan text-align -->
+        <tr>
+            <td colspan="2" style="text-align: center;"><button type="submit">Kirim Pesan</button><button type="reset">Reset</button></td>
+        </tr>
+      </table>
+    </form>
+    <p><em>Catatan : karena website ini hanya menggunakan HTML, form belum terhubung ke server/database.</em></p>
+    <hr />
+    <p>© 2026 Mohammad Faiz Abdul Hafizh. Dibuat menggunakan HTML.</p>
+  </body>
+</html>
